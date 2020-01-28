@@ -12,7 +12,14 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
-  "keywords": ["express", "mysql", "beer", "wine", "cocktail", "diary"],
+  "keywords": [
+    "express",
+    "mysql",
+    "beer",
+    "wine",
+    "cocktail",
+    "diary"
+  ],
   "author": "Sarah Cullen",
   "license": "ISC"
 }

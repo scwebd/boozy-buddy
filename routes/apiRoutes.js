@@ -59,8 +59,4 @@ module.exports = function(app, connection) {
             res.end();
         })
     });
-
-    app.get("/api/waitlist", function (req, res) {
-        res.json(waitListData);
-    });
 }
