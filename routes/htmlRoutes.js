@@ -2,27 +2,22 @@
 const path = require("path");
 
 module.exports = function (app) {
-    // get of /beers => beers.html
     app.get("/beers", (req, res) => {
         res.sendFile(path.join(__dirname, "../public/beers.html"));
     });
 
-    // get of /cocktails => cocktails.html
     app.get("/cocktails", (req, res) => {
         res.sendFile(path.join(__dirname, "../public/cocktails.html"));
     });
 
-    // get of /wines => wines.html
     app.get("/wines", (req, res) => {
         res.sendFile(path.join(__dirname, "../public/wines.html"));
     });
 
-    // get of /drinks/loves => loves.html
     app.get("/drinks/loves", (req, res) => {
         res.sendFile(path.join(__dirname, "../public/loves.html"));
     });
 
-    // get of /drinks/hates => hates.html
     app.get("/drinks/hates", (req, res) => {
         res.sendFile(path.join(__dirname, "../public/hates.html"));
     });

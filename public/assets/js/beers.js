@@ -1,19 +1,6 @@
-{/* 
-<div class="card">
-    <div class="card-body">
-        <h3>Josh Cabernet Sauvignon</h3>
-        <p><strong>Rating: </strong>4</p>
-        <p><strong>Loved it? </strong>True | <strong>Hated it? </strong>False</p>
-        <p><strong>Type: </strong>Wine</p>
-        <p><strong>Location: </strong>Home</p>
-        <p><strong>Price: </strong>$21.25</p>
-        <p><strong>Description/Notes: </strong>Bought at Total Beverage; great taste: cinnamon, cloves,
-                a bit of toasty oak. Would go great with dinner but had with cheese plate and dark chocolate.</p>
-    </div>
-</div> 
-*/}
-
-
+// BEHOLD: the magic of template literals, allowing us to build out significant blocks
+// of HTML and inject JS values as needed; think about how much easier this is to
+// build out than the same block of HTML + variables using string concatenation! 
 $.get("/api/beers", data => {
     for (const beer of data) {
         const card = 
